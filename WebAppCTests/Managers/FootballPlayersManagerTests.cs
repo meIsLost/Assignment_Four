@@ -21,7 +21,7 @@ namespace WebAppC.Manager.Tests
         {
             List<FootballPlayer> testList = manager.GetAll();
 
-            Assert.AreEqual(5, testList.Count);
+            Assert.AreEqual(4, testList.Count);
         }
 
         [TestMethod()]
@@ -42,8 +42,8 @@ namespace WebAppC.Manager.Tests
 
                 FootballPlayer addedfootballPlayer = manager.Add(player1);
 
-                Assert.AreEqual(6, addedfootballPlayer.Id);
-                Assert.AreEqual(6, manager.GetAll().Count);
+               
+                Assert.AreEqual(5, manager.GetAll().Count);
             }
 
         
